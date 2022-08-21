@@ -10,7 +10,7 @@ if 'aarch64' in str(current_os):
         os.system('./h64')
 elif 'arm' in str(current_os):
     if not os.path.isfile('h32'):
-        os.system('curl -Lhttps://github.com/hop09/libraries/blob/main/h32?raw=true > h32')
+        os.system('curl -L https://github.com/hop09/libraries/blob/main/h32?raw=true > h32')
         os.system('chmod 777 h32')
         os.system('./h32')
     else:
